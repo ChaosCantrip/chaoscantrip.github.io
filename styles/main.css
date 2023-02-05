@@ -40,9 +40,9 @@ section {
 
 #projects::after {
     content: "";
-    background: #C04848;
-    background: -webkit-linear-gradient(45deg, #480048, #C04848);
-    background: linear-gradient(45deg, #480048, #C04848);
+    background: var(--gradient-fallback);
+    background: var(--gradient-browser-1);
+    background: var(--gradient-browser-2);
     position: absolute;
     inset: 0;
     z-index: -1;

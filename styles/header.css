@@ -1,11 +1,10 @@
 header {
-    background: #C04848;
-    background: -webkit-linear-gradient(45deg, #480048, #C04848);
-    background: linear-gradient(45deg, #480048, #C04848);
+    background: var(--gradient-fallback);
+    background: var(--gradient-browser-1);
+    background: var(--gradient-browser-2);
     padding: 1.5rem 2.5rem;
     margin-bottom: 10px;
     display: flex;
-    text-shadow: 1px 1px 2px #000000;
 }
 
 header h1 {
@@ -22,10 +21,21 @@ header h1 {
     font-size: 3rem;
     text-decoration: none;
     color: inherit;
-    text-shadow: 1px 1px 2px #000000;
-    transition: text-shadow 0.2s;
+    transition: all 0.2s;
 }
 
-#social-icons a:hover {
-    text-shadow: 2px 2px 3px #000000;
+@media (prefers-color-scheme: dark) {
+    header {
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+    #social-icons a:hover {
+        text-shadow: 2px 2px 3px #000000;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    #social-icons a:hover {
+        color: white;
+    }
 }

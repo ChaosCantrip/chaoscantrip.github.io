@@ -4,3 +4,21 @@
     --h-font: 'Bebas Neue', cursive;
     --p-font: 'Roboto', sans-serif;
 }
+
+@media (prefers-color-scheme: light){
+    :root {
+        --gradient-fallback: #BE93C5;
+        --gradient-browser-1: -webkit-linear-gradient(45deg, #7BC6CC, #BE93C5);
+        --gradient-browser-2: linear-gradient(45deg, #7BC6CC, #BE93C5);
+        color: #000033;
+        background-color: #F5F5F5;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --gradient-fallback: #C04848;
+        --gradient-browser-1: -webkit-linear-gradient(45deg, #480048, #C04848);
+        --gradient-browser-2: linear-gradient(45deg, #480048, #C04848);
+    }
+}
