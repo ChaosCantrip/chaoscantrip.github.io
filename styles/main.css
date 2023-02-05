@@ -110,22 +110,10 @@ main a:hover {
     text-shadow: 2px 2px 1px var(--gradient-fallback);
 }
 
-#about {
-    background: var(--gradient-fallback);
-    background: var(--gradient-browser-1);
-    background: var(--gradient-browser-2);
-    --mask:
-            radial-gradient(42.00px at 50% 58.75px,#000 99%,#0000 101%) calc(50% - 50px) 0/100px 100%,
-            radial-gradient(42.00px at 50% -33.75px,#0000 99%,#000 101%) 50% 25px/100px 100% repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-}
-
 #large-socials {
     text-align: center;
     font-size: 10rem;
     padding: 20px;
-    height: 12rem;
 }
 
 .social1 {
@@ -142,4 +130,30 @@ main a:hover {
 
 .social4 {
     transition-delay: 1000ms;
+}
+
+#about {
+    background: var(--gradient-fallback);
+    background: var(--gradient-browser-1);
+    background: var(--gradient-browser-2);
+    --mask:
+            radial-gradient(42.00px at 50% 58.75px,#000 99%,#0000 101%) calc(50% - 50px) 0/100px 100%,
+            radial-gradient(42.00px at 50% -33.75px,#0000 99%,#000 101%) 50% 25px/100px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+#music {
+    display: flex;
+    gap: 1rem;
+}
+
+.song-embed {
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    #music {
+        display: block;
+    }
 }
