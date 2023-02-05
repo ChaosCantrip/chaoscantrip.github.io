@@ -12,7 +12,7 @@ section {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-20%);
-    transition: all 1s;
+    transition: opacity 1s, filter 1s, transform 1s;
 }
 
 @media(prefers-reduced-motion) {
@@ -119,4 +119,27 @@ main a:hover {
             radial-gradient(42.00px at 50% -33.75px,#0000 99%,#000 101%) 50% 25px/100px 100% repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
+}
+
+#large-socials {
+    text-align: center;
+    font-size: 10rem;
+    padding: 20px;
+    height: 12rem;
+}
+
+.social1 {
+    transition-delay: 400ms;
+}
+
+.social2 {
+    transition-delay: 600ms;
+}
+
+.social3 {
+    transition-delay: 800ms;
+}
+
+.social4 {
+    transition-delay: 1000ms;
 }
