@@ -29,7 +29,7 @@ section {
 
 .section-title {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 4rem;
     margin-bottom: 5rem;
 }
 
@@ -53,6 +53,7 @@ section {
     margin-block: 1rem;
     display: flex;
     padding-inline: 1rem;
+    font-size: 2rem;
 }
 
 .languages {
