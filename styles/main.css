@@ -7,3 +7,16 @@ main {
 section > h1 {
     text-align: center;
 }
+
+#projects {
+    position: relative;
+}
+
+#projects::after {
+    content: "";
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transform: skewY(-5deg);
+}
