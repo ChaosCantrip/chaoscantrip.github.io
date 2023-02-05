@@ -49,6 +49,10 @@ section {
     transform: skewY(-2deg);
 }
 
+.project {
+    padding-block: 5rem;
+}
+
 .project-title {
     margin-block: 1rem;
     display: flex;
