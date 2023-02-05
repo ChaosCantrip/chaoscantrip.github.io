@@ -35,11 +35,14 @@ section {
 
 #projects {
     position: relative;
+    z-index: 1;
 }
 
 #projects::after {
     content: "";
-    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    background: #C04848;
+    background: -webkit-linear-gradient(45deg, #480048, #C04848);
+    background: linear-gradient(45deg, #480048, #C04848);
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -57,13 +60,10 @@ section {
 }
 
 .languages>p {
-    background-color: white;
+    transition-delay: 300ms;
     font-family: "Cascadia Code", serif;
     font-weight: bolder;
-    margin-left: auto;
     border-radius: 0.5rem;
     padding: 5px;
-    color: black;
-    mix-blend-mode: screen;
     display: inline;
 }
