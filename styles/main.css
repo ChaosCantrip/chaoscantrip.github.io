@@ -26,3 +26,25 @@ section {
     z-index: -1;
     transform: skewY(-2deg);
 }
+
+.project-title {
+    margin-block: 1rem;
+    display: flex;
+    padding-inline: 1rem;
+}
+
+.languages {
+    margin-left: auto;
+}
+
+.languages>p {
+    background-color: white;
+    font-family: "Cascadia Code", serif;
+    font-weight: bolder;
+    margin-left: auto;
+    border-radius: 0.5rem;
+    padding: 5px;
+    color: black;
+    mix-blend-mode: screen;
+    display: inline;
+}
