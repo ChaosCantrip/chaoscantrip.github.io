@@ -1,7 +1,11 @@
-main {
+.wrapper {
     max-width: 80rem;
     margin-inline: auto;
     padding-inline: 1rem;
+}
+
+section {
+    padding-block: 4rem;
 }
 
 section > h1 {
@@ -18,5 +22,5 @@ section > h1 {
     position: absolute;
     inset: 0;
     z-index: -1;
-    transform: skewY(-5deg);
+    transform: skewY(-2deg);
 }
