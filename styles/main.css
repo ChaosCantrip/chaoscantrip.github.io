@@ -33,6 +33,31 @@ section {
     margin-bottom: 5rem;
 }
 
+@keyframes nameAnim {
+    0% {
+        filter: blur(10px);
+        opacity: 0;
+        border-radius: 3rem;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+        border-radius: 1rem;
+    }
+}
+
+#name {
+    padding: 1rem;
+    background: var(--gradient-fallback);
+    background: var(--gradient-browser-1);
+    background: var(--gradient-browser-2);
+
+    border-radius: 1rem;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation: nameAnim 1.5s;
+}
+
 #projects {
     position: relative;
     z-index: 1;
