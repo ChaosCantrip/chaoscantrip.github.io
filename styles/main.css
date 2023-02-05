@@ -111,9 +111,24 @@ main a:hover {
 }
 
 #large-socials {
-    text-align: center;
+    margin-inline: auto;
+    max-width: 60rem;
+    display: flex;
     font-size: 10rem;
     padding: 20px;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+    #large-socials {
+        font-size: 5rem;
+    }
+}
+
+#large-socials>a {
+    flex-grow: 1;
 }
 
 .social1 {
