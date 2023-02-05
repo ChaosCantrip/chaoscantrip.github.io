@@ -2,6 +2,6 @@ header {
     background: #C04848;
     background: -webkit-linear-gradient(45deg, #480048, #C04848);
     background: linear-gradient(45deg, #480048, #C04848);
-    padding: 15px;
+    padding: 1.5rem 2.5rem;
     margin-bottom: 10px;
 }
