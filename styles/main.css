@@ -67,3 +67,14 @@ section {
     padding: 5px;
     display: inline;
 }
+
+main a {
+    color: var(--gradient-fallback);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+main a:hover {
+    color: inherit;
+    text-shadow: 2px 2px 1px var(--gradient-fallback);
+}
