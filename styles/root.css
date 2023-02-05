@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto&display=swap");
 
 :root {
-    --h-font: 'Bebas Neue', cursive;
+    --h-font: 'Kanit', sans-serif;
     --p-font: 'Roboto', sans-serif;
 }
 
