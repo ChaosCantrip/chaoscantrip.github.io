@@ -1,0 +1,26 @@
+html {
+    overflow: overlay;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 0.4rem;
+    background: var(--gradient-fallback);
+    background: var(--gradient-browser-1);
+    background: var(--gradient-browser-2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-fallback);
+}
