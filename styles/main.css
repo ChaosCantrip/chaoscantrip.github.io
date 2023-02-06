@@ -27,6 +27,24 @@ section {
     transform: translateX(0);
 }
 
+main a {
+    color: var(--gradient-fallback);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+main a:hover {
+    color: inherit;
+    text-shadow: 2px 2px 1px var(--gradient-fallback);
+}
+
+@media (prefers-color-scheme: light) {
+    #projects a, #about a {
+        color: antiquewhite;
+    }
+}
+
+
 .section-title {
     text-align: center;
     font-size: 4rem;
@@ -97,17 +115,6 @@ section {
     border-radius: 0.5rem;
     padding: 5px;
     display: inline;
-}
-
-main a {
-    color: var(--gradient-fallback);
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-main a:hover {
-    color: inherit;
-    text-shadow: 2px 2px 1px var(--gradient-fallback);
 }
 
 #large-socials {
