@@ -1,5 +1,6 @@
 #project_gallery_wrapper {
-
+    display: grid;
+    grid-template-columns: 5rem auto 5rem;
 }
 
 #project_gallery {
