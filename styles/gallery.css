@@ -7,6 +7,10 @@
 
 }
 
+.project_gallery_arrow {
+    z-index: 3;
+}
+
 #project_gallery_left_arrow {
 
 }
