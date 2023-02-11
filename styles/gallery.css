@@ -6,6 +6,7 @@
 #project_gallery {
     position: relative;
     display: grid;
+    overflow: hidden;
 }
 
 .project_gallery_arrow {
