@@ -5,6 +5,7 @@
 
 #project_gallery {
     position: relative;
+    display: grid;
 }
 
 .project_gallery_arrow {
@@ -29,7 +30,8 @@
 }
 
 .project_gallery_card {
-    position: absolute;
+    grid-column: 1/2;
+    grid-row: 1/2;
     transition: opacity 1s, filter 1s, transform 1s;
 }
 
