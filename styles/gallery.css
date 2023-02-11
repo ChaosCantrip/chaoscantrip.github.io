@@ -21,12 +21,17 @@
 
 .project_gallery_card {
     position: absolute;
+    transition: opacity 1s, filter 1s, transform 1s;
 }
 
 .project_gallery_card.left {
     opacity: 0;
+    transform: translateX(-40%);
+    filter: blur(5px);
 }
 
 .project_gallery_card.right {
     opacity: 0;
+    transform: translateX(40%);
+    filter: blur(5px);
 }
