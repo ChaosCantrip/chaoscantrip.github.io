@@ -20,14 +20,14 @@ function change_index(diff) {
         gallery_dots[target_index].classList.add("active");
         active_index = target_index;
         if (active_index === 0) {
-            gallery_arrows[1].classList.remove("hidden");
-            gallery_arrows[0].classList.add("hidden");
+            gallery_arrows[1].classList.remove("hidden_arrow");
+            gallery_arrows[0].classList.add("hidden_arrow");
         } else if (active_index === max_index) {
-            gallery_arrows[0].classList.remove("hidden");
-            gallery_arrows[1].classList.add("hidden");
+            gallery_arrows[0].classList.remove("hidden_arrow");
+            gallery_arrows[1].classList.add("hidden_arrow");
         } else {
-            gallery_arrows[0].classList.remove("hidden");
-            gallery_arrows[1].classList.remove("hidden");
+            gallery_arrows[0].classList.remove("hidden_arrow");
+            gallery_arrows[1].classList.remove("hidden_arrow");
         }
     }
 }

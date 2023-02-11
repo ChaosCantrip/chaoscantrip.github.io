@@ -14,7 +14,7 @@
     font-size: 2rem;
 }
 
-.project_gallery_arrow_wrapper:hover > .project_gallery_arrow {
+.project_gallery_arrow_wrapper:not(.hidden_arrow):hover > .project_gallery_arrow {
     text-shadow: 2px 2px 8px #FF0000;
 }
 
@@ -86,8 +86,10 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    transition: opacity 0.5s;
 }
 
-.project_gallery_arrow_wrapper.hidden {
-    display: none;
+.project_gallery_arrow_wrapper.hidden_arrow {
+    opacity: 0.2;
+    cursor: initial;
 }
