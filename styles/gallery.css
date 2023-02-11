@@ -9,6 +9,15 @@
 
 .project_gallery_arrow {
     z-index: 3;
+    font-size: 2rem;
+}
+
+.project_gallery_arrow:hover {
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+.project_gallery_arrow.hidden {
+    display: none;
 }
 
 #project_gallery_left_arrow {
