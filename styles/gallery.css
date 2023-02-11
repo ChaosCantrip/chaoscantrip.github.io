@@ -102,3 +102,35 @@
     opacity: 0.2;
     cursor: initial;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #project_gallery_wrapper {
+        display: block;
+    }
+
+    #project_gallery {
+        display: block;
+    }
+
+    .project_gallery_arrow_wrapper {
+        display: none;
+    }
+
+    #card-dots {
+        display: none;
+    }
+
+    .project_gallery_card {
+        margin-block: 3rem;
+        opacity: 1;
+        position: relative;
+    }
+
+    .project_gallery_card.right, .project_gallery_card.left {
+        opacity: 1;
+        position: relative;
+        transform: none;
+        filter: none;
+    }
+}
