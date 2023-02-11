@@ -5,6 +5,7 @@
     <title>James Donald</title>
     <link rel="stylesheet" href="styles/master.css">
     <script defer src="scripts/scroll.js"></script>
+    <script defer src="scripts/gallery.js"></script>
     <script src="https://kit.fontawesome.com/ad8156e7fb.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -80,7 +81,7 @@
                 </div>
                 <h2>Projects</h2>
                 <div id="project_gallery_wrapper">
-                    <i id="project_gallery_left_arrow" class="fa-solid fa-arrow-left project_gallery_arrow"></i>
+                    <i onclick="change_index(-1)" id="project_gallery_left_arrow" class="fa-solid fa-arrow-left project_gallery_arrow"></i>
                     <div id="project_gallery">
                         <div class="project_gallery_card">
                             <h2>Card 1</h2>
@@ -98,7 +99,7 @@
                             <h2>Card 5</h2>
                         </div>
                     </div>
-                    <i id="project_gallery_right_arrow" class="fa-solid fa-arrow-right project_gallery_arrow"></i>
+                    <i onclick="change_index(1)" id="project_gallery_right_arrow" class="fa-solid fa-arrow-right project_gallery_arrow"></i>
                 </div>
             </div>
         </section>
