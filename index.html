@@ -81,7 +81,9 @@
                 </div>
                 <h2>Projects</h2>
                 <div id="project_gallery_wrapper">
-                    <i onclick="change_index(-1)" id="project_gallery_left_arrow" class="fa-solid fa-arrow-left project_gallery_arrow"></i>
+                    <div onclick="change_index(-1)" class="project_gallery_arrow_wrapper hidden">
+                        <i id="project_gallery_left_arrow" class="fa-solid fa-arrow-left project_gallery_arrow"></i>
+                    </div>
                     <div id="project_gallery">
                         <div class="project_gallery_card">
                             <h2>Card 1</h2>
@@ -129,7 +131,9 @@
                                 Accusantium commodi consequatur impedit libero maxime natus quis!</p>
                         </div>
                     </div>
-                    <i onclick="change_index(1)" id="project_gallery_right_arrow" class="fa-solid fa-arrow-right project_gallery_arrow"></i>
+                    <div onclick="change_index(1)" class="project_gallery_arrow_wrapper">
+                        <i id="project_gallery_right_arrow" class="fa-solid fa-arrow-right project_gallery_arrow"></i>
+                    </div>
                     <div id="card-dots">
                         <div class="card-dot active"></div>
                         <div class="card-dot"></div>
