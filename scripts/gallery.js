@@ -31,3 +31,15 @@ function change_index(diff) {
         }
     }
 }
+
+function go_to(target_index) {
+    let diff;
+    if (target_index > active_index) {
+        diff = 1;
+    } else {
+        diff = -1;
+    }
+    while (active_index !== target_index) {
+        change_index(diff);
+    }
+}
