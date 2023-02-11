@@ -18,3 +18,11 @@
 .project_gallery_card {
     position: absolute;
 }
+
+.project_gallery_card.left {
+    opacity: 0;
+}
+
+.project_gallery_card.right {
+    opacity: 0;
+}
