@@ -1,6 +1,9 @@
 #project_gallery_wrapper {
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: 6rem auto 6rem;
+    gap: 1rem;
+    row-gap: 2rem;
 }
 
 #project_gallery {

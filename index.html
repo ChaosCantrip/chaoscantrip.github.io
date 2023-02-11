@@ -47,46 +47,50 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur cumque dolor esse, et
                     hic inventore ipsam ipsum maiores maxime nobis non quas quo reiciendis reprehenderit similique soluta,
                     ullam veniam.</p>
-                <div class="project hidden">
-                    <div class="project-title">
-                        <h2>SharkBot</h2>
-                        <div class="languages">
-                            <p>Python</p>
-                        </div>
-                    </div>
-                    <p>SharkBot was my first large project.</p>
-                    <p>Utilising Python, and the <a href="https://discordpy.readthedocs.io/en/stable/" target="_blank">discord.py</a> library,
-                        I built a bot to serve the Discord Server me and my friends use. Originally built to keep track
-                        of a <i>#count-to-1000</i> channel we had going, it fast became my new hobby, adding more
-                        features and content as fast as we could come up with it.</p>
-                    <p>Now, it has a plethora of features, from admin features to help us run the server to (free)
-                        lootboxes and an ever-expanding item collection game. More info can be found soon at <a href="https://sharkbot.online" target="_blank">SharkBot Online</a>, though that website is still a work in progress.</p>
-                    <p>Until recently, SharkBot was hosted by myself, running from
-                        a <a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/" target="_blank">Raspberry Pi</a> quite
-                        literally scotch taped to my bedroom wall. Unfortunately, I have moved house, and due to
-                        network reliability issues, this solution wasn't working as well so he now runs on an AWS EC2 Instance.
-                        Changes to the code are uploaded to GitHub, and the bot automatically fetches and applies them when needed.</p>
-                </div>
-                <div class="project hidden">
-                    <div class="project-title">
-                        <h2>SharkBot Online</h2>
-                        <div class="languages">
-                            <p>HTML/CSS</p>
-                            <p>Next.js</p>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto consectetur debitis
-                        dignissimos dolore ea eos exercitationem fugit hic inventore libero odit pariatur placeat porro,
-                        praesentium quia rem totam vitae.</p>
-                </div>
-                <h2>Projects</h2>
                 <div id="project_gallery_wrapper">
                     <div onclick="change_index(-1)" class="project_gallery_arrow_wrapper hidden_arrow">
                         <i id="project_gallery_left_arrow" class="fa-solid fa-arrow-left project_gallery_arrow"></i>
                     </div>
                     <div id="project_gallery">
                         <div class="project_gallery_card">
-                            <h2>Card 1</h2>
+                            <div class="project-title">
+                                <h2>SharkBot</h2>
+                                <div class="languages">
+                                    <p>Python</p>
+                                </div>
+                            </div>
+                            <p>SharkBot was my first large project.</p>
+                            <p>Utilising Python, and the <a href="https://discordpy.readthedocs.io/en/stable/" target="_blank">discord.py</a> library,
+                                I built a bot to serve the Discord Server me and my friends use. Originally built to keep track
+                                of a <i>#count-to-1000</i> channel we had going, it fast became my new hobby, adding more
+                                features and content as fast as we could come up with it.</p>
+                            <p>Now, it has a plethora of features, from admin features to help us run the server to (free)
+                                lootboxes and an ever-expanding item collection game. More info can be found soon at <a href="https://sharkbot.online" target="_blank">SharkBot Online</a>, though that website is still a work in progress.</p>
+                            <p>Until recently, SharkBot was hosted by myself, running from
+                                a <a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/" target="_blank">Raspberry Pi</a> quite
+                                literally scotch taped to my bedroom wall. Unfortunately, I have moved house, and due to
+                                network reliability issues, this solution wasn't working as well so he now runs on an AWS EC2 Instance.
+                                Changes to the code are uploaded to GitHub, and the bot automatically fetches and applies them when needed.</p>
+                        </div>
+                        <div class="project_gallery_card right">
+                            <div class="project-title">
+                                <h2>SharkBot Online</h2>
+                                <div class="languages">
+                                    <p>HTML/CSS</p>
+                                    <p>Next.js</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto consectetur debitis
+                                dignissimos dolore ea eos exercitationem fugit hic inventore libero odit pariatur placeat porro,
+                                praesentium quia rem totam vitae.</p>
+                        </div>
+                        <div class="project_gallery_card right">
+                            <div class="project-title">
+                                <h2>Project 3</h2>
+                                <div class="languages">
+                                    <p>A Lack of Sleep</p>
+                                </div>
+                            </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at consequuntur illo
                                 maxime nam, nisi quaerat sapiente ullam. Accusamus cupiditate distinctio eligendi hic
                                 illum incidunt minus odio sit vel veritatis!</p>
@@ -95,7 +99,12 @@
                                 Accusantium commodi consequatur impedit libero maxime natus quis!</p>
                         </div>
                         <div class="project_gallery_card right">
-                            <h2>Card 2</h2>
+                            <div class="project-title">
+                                <h2>Project 4</h2>
+                                <div class="languages">
+                                    <p>Python</p>
+                                </div>
+                            </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at consequuntur illo
                                 maxime nam, nisi quaerat sapiente ullam. Accusamus cupiditate distinctio eligendi hic
                                 illum incidunt minus odio sit vel veritatis!</p>
@@ -104,25 +113,12 @@
                                 Accusantium commodi consequatur impedit libero maxime natus quis!</p>
                         </div>
                         <div class="project_gallery_card right">
-                            <h2>Card 3</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at consequuntur illo
-                                maxime nam, nisi quaerat sapiente ullam. Accusamus cupiditate distinctio eligendi hic
-                                illum incidunt minus odio sit vel veritatis!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequuntur eum illum
-                                ipsum magnam quam reiciendis, saepe, sed tempora voluptas voluptatem voluptatibus.
-                                Accusantium commodi consequatur impedit libero maxime natus quis!</p>
-                        </div>
-                        <div class="project_gallery_card right">
-                            <h2>Card 4</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at consequuntur illo
-                                maxime nam, nisi quaerat sapiente ullam. Accusamus cupiditate distinctio eligendi hic
-                                illum incidunt minus odio sit vel veritatis!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequuntur eum illum
-                                ipsum magnam quam reiciendis, saepe, sed tempora voluptas voluptatem voluptatibus.
-                                Accusantium commodi consequatur impedit libero maxime natus quis!</p>
-                        </div>
-                        <div class="project_gallery_card right">
-                            <h2>Card 5</h2>
+                            <div class="project-title">
+                                <h2>Project 5</h2>
+                                <div class="languages">
+                                    <p>PHP</p>
+                                </div>
+                            </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at consequuntur illo
                                 maxime nam, nisi quaerat sapiente ullam. Accusamus cupiditate distinctio eligendi hic
                                 illum incidunt minus odio sit vel veritatis!</p>
