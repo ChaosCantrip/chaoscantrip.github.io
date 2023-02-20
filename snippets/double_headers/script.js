@@ -1,8 +1,8 @@
-const james = document.getElementById("james");
+const chaos = document.getElementById("chaos");
 
 const handleOnMove = e => {
     const p = e.clientX / window.innerWidth * 100;
-    james.style.width = `${p}%`;
+    chaos.style.width = `${p}%`;
 }
 
 document.onmousemove = e => handleOnMove(e);

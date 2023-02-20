@@ -20,11 +20,11 @@
     width: 70vw;
 }
 
-#james {
+#chaos {
     background: red;
     z-index: 2;
 }
 
-#chaos {
+#james {
     background: blue;
 }
