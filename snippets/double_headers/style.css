@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --gradient-fallback-james: #4DA0B0;  /* fallback for old browsers */
+    --gradient-browser-1-james: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+    --gradient-browser-2-james: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --gradient-fallback-chaos: #23074d;  /* fallback for old browsers */
+    --gradient-browser-1-chaos: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    --gradient-browser-2-chaos: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 .side {
     overflow: hidden;
     height: 100vh;
@@ -14,7 +24,8 @@
 }
 
 .text {
-    font-family: Verdana, serif;
+    color: white;
+    font-family: "Cascadia Code", serif;
     user-select: none;
     text-align: center;
     font-size: 5rem;
@@ -22,11 +33,37 @@
     width: 70vw;
 }
 
+.fancy {
+    font-weight: bolder;
+    font-family: "High Tower Text", serif;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+}
+
+#chaos .fancy {
+    color: var(--gradient-fallback-james);
+}
+
+#james .fancy {
+    color: var(--gradient-fallback-chaos);
+}
+
 #chaos {
-    background: red;
+    background: var(--gradient-fallback-chaos);
+    background: var(--gradient-browser-1-chaos);
+    background: var(--gradient-browser-2-chaos);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+
     z-index: 2;
 }
 
 #james {
-    background: blue;
+    background: var(--gradient-fallback-james);
+    background: var(--gradient-browser-1-james);
+    background: var(--gradient-browser-2-james);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
 }
