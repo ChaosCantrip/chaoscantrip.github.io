@@ -14,6 +14,7 @@
 }
 
 .text {
+    user-select: none;
     text-align: center;
     font-size: 5rem;
     margin: 0 15vw;
